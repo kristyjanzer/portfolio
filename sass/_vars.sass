@@ -1,0 +1,109 @@
+$default-font: 'Open Sans', Arial, sans-serif
+$accent: orange
+$text: #110303
+
+// Customization Bootstrap vars from "app/libs/bootstrap/scss/_variables.scss"
+$grid-gutter-width: 30px
+$grid-columns: 12
+$grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px)
+$container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1140px)
+
+$gutter: $grid-gutter-width
+
+
+*,
+*:before,
+*:after
+	-moz-box-sizing: border-box
+	-webkit-box-sizing: border-box
+	box-sizing: border-box
+	
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	min-width: 320px
+	min-height: 100vh
+	font-family: $default-font
+	font-size: 16px
+	line-height: 1.2
+	font-weight: 500
+	color: $text
+	font-weight: normal
+	background-color: #fff
+	position: relative
+	overflow-x: hidden
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+img
+  max-width: 100%
+  height: auto
+
+b, strong
+	font-weight: bold
+
+a
+	text-decoration: none
+	cursor: pointer
+	display: block
+	color: inherit
+	&:hover
+		text-decoration: none
+
+p, ul, li
+	padding: 0
+	margin: 0
+
+li
+	list-style-type: none
+
+h1, h2, h3, h4, h5, h6
+	padding: 0
+	margin: 0
+	font-weight: normal
+
+button
+	background: transparent
+	border: none
+	cursor: pointer
+	padding: 0
+	margin: 0
+	outline: none
+
+address
+  font-style: normal
+
+ul
+  list-style-type: none
+  padding: 0
+  margin: 0
+
+h1, h2, h3
+  margin: 0
+
+.container
+	padding: 0 15px
+	margin: 0 auto
+	max-width: 1100px
+	// max-width: 1250px
+
+fieldset
+  margin: 0
+  padding: 0
+  border: none
+
+legend
+  padding: 0
+  margin: 0
+  display: block
+
